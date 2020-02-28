@@ -34,7 +34,7 @@ DUFRENE Mélic
 ### Exercice 2 : Contrôle de mot de passe
 
 Script testpwd.sh
-
+```
 #!/bin/bash 
 
 read -s -p 'Veuillez saisir le mot de passe : ' MDP
@@ -44,11 +44,11 @@ if [ $PASSWORD = $MDP ] ; then
 else
 	echo 'Mot de passe erroné'
 fi
-
+```
 ### Exercice 3 : Expressions rationnelles
 
 Script Exercice3.sh :
-
+```
 function is_number() 
 {
 	re='^[+-]?[0-9]+([.][0-9]+)?$' 
@@ -63,11 +63,11 @@ is_number $1
 if [ $? -eq 1 ] ; then 
         echo "Erreur ce n'est pas un réel" 
 fi 
-
+```
 ### Exercice 4 : Contrôle d'utilisateur
 
 Script :
-
+```
 #!/bin/bash
 
 if [ $# -eq 0] ; then
@@ -80,11 +80,11 @@ else
                 echo "Cet utilisateur existe effectivement" 
         fi 
 fi 
-
+```
 ### Exercice 5 : Factorielle
 
 Script Factorielle_rec.sh :
-
+```
 #!/bin/bash 
 if [ $1 -eq 0 -o $1 -eq 1 ] ; then 
         echo 1 
@@ -92,12 +92,12 @@ else
         N=$(( $1-1 )) 
         echo $(( $1 * $(./Exercice5.sh $N) )) 
 fi 
-
+```
 
 
 
 Script Factorielle_it.sh
-
+```
 #!/bin/bash
 
 prod=1
@@ -106,12 +106,12 @@ do
 	prod=$(( $prod * $i ))
 done
 echo 'Résultat : '$prod
-
+```
 
 ### Exercice 6 : Le juste prix
 
 Script Juste_prix.sh :
-
+```
 #!/bin/bash
 
 n=$RANDOM 
@@ -132,26 +132,12 @@ do
         fi 
 done 
 echo "Vous avez gagnez en "$nombreDeCoups" coups." 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
 ### Exercice 7 : Statistiques
 
 Script Statistiques.sh :
-
+```
 function is_number() 
 { 
         re='^[+-]?[0-9]$' 
@@ -191,19 +177,11 @@ echo "-Nombre d'entrées valides: "$nb
 echo "-Valeur minimale: "$mini 
 echo "-Valeur maximale: "$maxi 
 echo "-Valeur moyenne: "$(( $mean / $nb )) 
-
-
-
-
-
-
-
-
-
+```
 On fait une 2e version qui va sauvegarder les notes entrées par l'utilisateur dans un tableau.
 
 Script Statistiques_v2.sh :
-
+```
 function is_number() {Même fonction que précédemment}
 
 
@@ -249,3 +227,4 @@ echo "-Nombre de notes: "$nb
 echo "-Valeur minimale: "$mini 
 echo "-Valeur maximale: "$maxi 
 echo "-Valeur moyenne: "$(( $mean / $nb )) 
+```
