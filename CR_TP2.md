@@ -5,29 +5,29 @@ DUFRENE Mélic
 
 ### Exercice 1 : Variables d'environnement
 
-	1. bash trouve les commandes dans le dossier /bin ou /sbin selon les droits actuels (user ou super-user)
-	2. La variable d'environnement $HOME permet de revenir au répertoire personnel
-	3. $LANG est la langue du système
-	    $PWD est le chemin du dossier courant
-	    $OLDPWD est le chemin du répertoire d'où l'on vient (utile pour la commande cd – par exemple)
-	    $SHELL permet de définir le chemin vers l'interpréteur de commande
-	    $_ est la dernière variable utilisée
-	4. Création d'une variable :
-		MY_VAR=5
-		$MY_VAR renvoie 5 donc la variable existe bien
-	5. Après l'appel à la commande bash, on change de session donc notre variable MY_VAR n'est plus accessible
-	6. Faire d'une variable une variable d'environnement :
-		export VAR=5
-		bash
-		$VAR affiche 5 cette fois la variable est commune à toutes les sessions donc accessible
-	7. Création d'une variable d'environnement NOMS :
-		export NOMS= ''BERARD Lucas DUFRENE Mélic''
-		$NOMS pour vérifier l'affectation
-	8. Afficher Bonjour à vous deux, binôme1 binôme2 :
-		 echo 'Bonjour à vous deux, '$NOMS' !'
-	9. Donner une valeur vide à une variable implique qu'elle existe toujours mais ne vaut rien. Unset une variable enlève sa définition, la variable n'est plus définie dans ce cas
-	10. Afficher $HOME = *chemin* :
-		echo '$HOME = '$HOME
+1. bash trouve les commandes dans le dossier /bin ou /sbin selon les droits actuels (user ou super-user)
+2. La variable d'environnement $HOME permet de revenir au répertoire personnel
+3. $LANG est la langue du système
+        $PWD est le chemin du dossier courant
+        $OLDPWD est le chemin du répertoire d'où l'on vient (utile pour la commande cd – par exemple)
+        $SHELL permet de définir le chemin vers l'interpréteur de commande
+        $_ est la dernière variable utilisée
+4. Création d'une variable :
+        MY_VAR=5
+        $MY_VAR renvoie 5 donc la variable existe bien
+5. Après l'appel à la commande bash, on change de session donc notre variable MY_VAR n'est plus accessible
+6. Faire d'une variable une variable d'environnement :
+        export VAR=5
+        bash
+        $VAR affiche 5 cette fois la variable est commune à toutes les sessions donc accessible
+7. Création d'une variable d'environnement NOMS :
+        export NOMS= ''BERARD Lucas DUFRENE Mélic''
+        $NOMS pour vérifier l'affectation
+8. Afficher Bonjour à vous deux, binôme1 binôme2 :
+                echo 'Bonjour à vous deux, '$NOMS' !'
+9. Donner une valeur vide à une variable implique qu'elle existe toujours mais ne vaut rien. Unset une variable enlève sa définition, la variable n'est plus définie dans ce cas
+10. Afficher $HOME = *chemin* :
+        echo '$HOME = '$HOME
 
 ## Programmation Bash
 
